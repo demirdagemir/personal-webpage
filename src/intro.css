@@ -1,0 +1,39 @@
+.intro {
+  display: grid;
+  grid-row: 3;
+  grid-column: 2;
+  grid-template-rows: 200px 1fr 200px;
+  grid-template-columns: 50px 661px;
+  font-size: 35px;
+  font-family: "Indie Flower", cursive;
+}
+
+.intro .intro-box {
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.intro-box .greet {
+  grid-row: 1;
+  color: #6dbfc5;
+  text-align: center;
+}
+
+.intro-box .body {
+  line-height: 40px;
+}
+
+.intro-box a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.intro-box a.edu-link {
+  color: #6aacf2;
+}
+
+.intro-box a.company-link {
+  color: #fea800;
+}
