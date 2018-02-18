@@ -3,33 +3,44 @@
   grid-column: 2;
   grid-row: 2;
   justify-self: end;
-  grid-template-rows: 99% 1%;
+  grid-template-rows: auto;
   font-family: "Indie Flower", cursive;
 }
 
-.navbar .navbar-bottom {
-  border: solid 1px #6dbfc5;
-  border-radius: 3px;
-  width: 87%;
-  justify-self: center;
-  grid-row: 2;
+.navbar .navbar-selected {
+  height: 3px;
+  width: 90px;
+  margin: 0px;
+  position: absolute;
+  z-index: 9999;
+  margin-left: 5px;
 }
 
 .navbar ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(4, 115px);
+  grid-template-columns: repeat(3, 105px);
   grid-row: 1;
-  padding: 0;
+  padding: 0 0 0 5px;
+  border-bottom: solid 1px #6dbfc5;
+  border-radius: 1px;
 }
 
-.navbar ul li {
+.navbar ul {
   text-align: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
 }
 
-.navbar ul li:hover {
+.navbar ul li a:hover {
   color: #fea800;
   cursor: pointer;
+}
+
+.navbar ul li .selected {
+  color: #6dbfc5;
 }
